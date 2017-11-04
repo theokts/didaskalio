@@ -1,0 +1,127 @@
+@media screen and (max-width: 991px) {
+
+  .section_3 {
+    padding-bottom: 50px;
+  }
+
+  .success_icon1 {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .success_icon4 {
+    border-radius: 0 0 40px 40px;
+  }
+
+  .info_icon {
+    margin-bottom: 60px;
+    font-size: 15px;
+  }
+
+  .footer_outer {
+    padding: 50px 0;
+  }
+
+  .fb_section {
+    padding: 20px 0;
+  }
+
+  .section_3 h2 {
+    margin-bottom: 20px;
+  }
+
+  .section_5_orange {
+    font-size: 40px;
+  }
+
+  .section_5_white {
+    font-size: 35px;
+  }
+
+  .copyrights a:hover {
+    border-top: none;
+    border-radius: 20%;
+    padding-bottom: 3px;
+    text-shadow: 1px 1px #f05522;
+  }
+
+  #maria-photo {
+    display: block;
+    margin: 20px auto;
+  }
+
+  blockquote {
+    padding-right: 0;
+  }
+
+  #owner {
+    font-size: 30px;
+  }
+
+  .ContactWrapper {
+    padding: 0;
+    text-align: center;
+  }
+
+  .section_contact1 h1 {
+    font-size: 40px;
+  }
+
+
+  .diploma {
+    padding: 10px;
+    margin-right: 0;
+}
+
+
+.NavCustom2 a.selected {
+  border-top: none;
+  color: #f05522 !important;
+}
+
+.NavCustom2 a:hover {
+  transition: all 0.4s;
+  border-top: none;
+  color: #f05522 !important;
+}
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .PushRight {
+    float: none;
+  }
+
+  .NavCustom2 a:hover {
+    transition: all 0.4s;
+    color: #f05522 !important;
+    background-color: transparent !important;
+    border-radius: 0%;
+  }
+
+  .NavCustom2 a {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .navbar-toggle {
+    margin-top: 30px;
+    padding: 13px;
+  }
+
+  footer {
+    padding: 35px;
+  }
+
+  .container_mobile {
+    margin: 0 20px;
+  }
+
+
+}
+
+
+
+
