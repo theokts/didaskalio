@@ -41,7 +41,7 @@
     border-top: none;
     border-radius: 20%;
     padding-bottom: 3px;
-    text-shadow: 1px 1px #f05522;
+
   }
 
   #maria-photo {
@@ -70,18 +70,20 @@
   .diploma {
     padding: 10px;
     margin-right: 0;
+    margin-bottom: 12px;
 }
 
 
-.NavCustom2 a.selected {
+.NavCustom1 .NavCustom2 a.selected {
   border-top: none;
-  color: #f05522 !important;
+  color: fff;
+  box-shadow: none;
 }
 
-.NavCustom2 a:hover {
+.NavCustom1 .NavCustom2 a:hover {
   transition: all 0.4s;
   border-top: none;
-  color: #f05522 !important;
+  color: #fff;
 }
 
 
@@ -93,12 +95,6 @@
     float: none;
   }
 
-  .NavCustom2 a:hover {
-    transition: all 0.4s;
-    color: #f05522 !important;
-    background-color: transparent !important;
-    border-radius: 0%;
-  }
 
   .NavCustom2 a {
     text-align: center;
@@ -119,6 +115,44 @@
     margin: 0 20px;
   }
 
+  .NavCustom1 .NavCustom2 li a.selected {
+    border-top: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #f05522;
+    opacity: 1;
+  }
+
+  .NavCustom1 .NavCustom2 li a:hover {
+  border-top: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: #f05522;
+  opacity: 1;
+  }
+
+  .programs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .copyrights {
+    font-size: 14px;
+  }
+
+  footer {
+    padding-bottom: 5px;
+    padding-top: 15px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+   .button_more {
+    left: 30%;
+  }
 
 }
 
