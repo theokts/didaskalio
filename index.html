@@ -12,27 +12,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <script>
-  $('#myButton').on('click', function () {
-    var $btn = $(this).button('loading')
-    // business logic...
-    $btn.button('reset')
-  })
-</script>
+    $('#myButton').on('click', function () {
+      var $btn = $(this).button('loading')
+      // business logic...
+      $btn.button('reset')
+    })
+  </script>
   <body>
-    <script src="https://use.fontawesome.com/0c5f037f31.js"></script>
     <header>
       <div class="NavWrapper">
         <div class="navbar navbar-default NavCustom1">
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Διδασκαλείο Αγγλικών</a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo2.png" class="logo"></a>
             <a class="navbar-toggle NavbarToggleCustom" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
           </div>
-          <div class="navbar-collapse collapse PushRight NavCustom2">
-            <ul class="nav navbar-nav">
+          <div class="navbar-collapse collapse PushRight">
+            <ul class="nav navbar-nav NavCustom2">
               <li><a href="index.html" class="selected">ΑΡΧΙΚΗ</a></li>
               <li><a href="programs.html">ΠΡΟΓΡΑΜΜΑΤΑ</a></li>
               <li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
@@ -111,7 +110,7 @@
           </div>
           <div id="success_students">
             <div class="white_line2"></div>
-            <h2 class="section_5_orange">125 επιτυχόντες</h1>
+            <h2 class="section_5_orange">125 επιτυχόντες</h2>
             <p class="orange_comment">στις εξετάσεις<span class="orange_span"> ECCE </span>και<span class="orange_span"> ECPE</span></p>
             <img src="img/success.png" class="stats_icon">
             <div class="white_line3"></div>
@@ -132,13 +131,13 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 info_icon">
-              <a href="contact.html"><i class="fa fa-info fa-5x" aria-hidden="true"></i><br><br>ΖΗΤΗΣΤΕ ΠΛΗΡΟΦΟΡΙΕΣ</a>
+              <a href="contact.html#info"><i class="fa fa-info fa-5x" aria-hidden="true"></i><br><br>ΖΗΤΗΣΤΕ ΠΛΗΡΟΦΟΡΙΕΣ</a>
             </div>
             <div class="col-md-4 info_icon">
-              <a href="contact.html"><i class="fa fa-map-marker fa-5x" aria-hidden="true"></i><br><br>ΕΠΙΣΚΕΦΤΕΙΤΕ<br>ΤΟ ΔΙΔΑΣΚΑΛΕΙΟ</a>
+              <a href="contact.html#map"><i class="fa fa-map-marker fa-5x" aria-hidden="true"></i><br><br>ΕΠΙΣΚΕΦΤΕΙΤΕ<br>ΤΟ ΔΙΔΑΣΚΑΛΕΙΟ</a>
             </div>
             <div class="col-md-4 info_icon">
-              <a href="contact.html"><i class="fa fa-comment-o fa-5x" aria-hidden="true"></i><br><br>ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</a>
+              <a href="contact.html#message"><i class="fa fa-comment-o fa-5x" aria-hidden="true"></i><br><br>ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</a>
             </div>
           </div>
         </div>
@@ -146,9 +145,15 @@
       <div class="contact_section">
         <div class="container">
           <div class="row">
-            <div class="col-md-2 col-md-offset-2 col-md-push-1 contact_icon"><a href="https://www.facebook.com/didaskaleio/?ref=aymt_homepage_panel" target="_blank"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i><br>Διδασκαλείο Αγγλικών</a></div>
-            <div class="col-md-4 contact_icon"><a href="tel:6973238468"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i><br>697 3238468</a></div>
-            <div class="col-md-2 col-md-pull-1 contact_icon"><a href="mailto:info@didaskalio.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><br>info@didaskalio.com</a></div>
+            <div class="col-md-2 col-md-offset-2 contact_icon">
+              <a href="https://www.facebook.com/didaskaleio/?ref=aymt_homepage_panel" target="_blank"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i><br>Διδασκαλείο Αγγλικών</a>
+            </div>
+            <div class="col-md-4 contact_icon">
+              <a href="tel:6973238468"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i><br>697 3238468</a>
+            </div>
+            <div class="col-md-2 contact_icon">
+              <a href="mailto:info@didaskalio.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><br>info@didaskalio.com</a>
+            </div>
           </div>
         </div>
       </div>
