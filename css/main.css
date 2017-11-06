@@ -9,11 +9,12 @@ GENERAL
 
 body {
   font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .NavCustom1 {
   background-color: #232323;
-  padding-bottom: 20px;
+  padding-bottom: 7px;
   margin-bottom: 0px;
   border-bottom: solid 2px #fff;
   border-left: none;
@@ -21,35 +22,45 @@ body {
   border-radius: 0%;
 }
 
+
 .NavCustom2  {
   background-color: #232323;
 }
 
-.NavCustom2 a.selected {
-  border-top: solid 1px #fff;
+.NavCustom1 .NavCustom2 a.selected {
+  box-shadow: inset 0 3px 0 0 #f05522;
+  opacity: 1;
 }
 
 
-.NavCustom2 a {
-  color: #fff !important;
-  font-size: 16px;
+.NavCustom1 .NavCustom2 li a {
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
   letter-spacing: 0.5px;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 2px;
   margin-left: 20px;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  margin-right: 5px;
+  padding-top: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+  -webkit-font-smoothing: antialiased;
+  opacity: 0.7;
 }
 
-.NavCustom2 a:hover {
-  transition: all 0.4s;
-  border-top: solid 1px #fff;
+.NavCustom1 .NavCustom2 li a:hover {
+  color: #fff;
+  transition: all 0.5s;
+  box-shadow: inset 0 3px 0 0 #fff;
+  opacity: 1;
 }
+
 
 .PushRight {
   float: right;
 }
-
 
 .section_contact1 h1 {
   color: #111;
@@ -57,7 +68,6 @@ body {
   text-align: center;
   margin-top: 35px;
   margin-bottom: 45px;
-  text-shadow: 1px 1px 1px #f94428;
 }
 
 
@@ -74,7 +84,7 @@ body {
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.5px;
-
+  -webkit-font-smoothing: antialiased;
 }
 
 .DetailsText {
@@ -84,6 +94,7 @@ body {
   margin: 25px 0;
   letter-spacing: 1px;
   font-weight: 300;
+  -webkit-font-smoothing: antialiased;
 
 }
 
@@ -130,13 +141,14 @@ a:link {
 .footer_outer a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 25px;
   letter-spacing: 0.5px;
   color:  #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
-.info_icon a:hover {
+.info_icon a:hover i {
   color: #f05522;
 }
 
@@ -148,7 +160,6 @@ a:link {
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 20%;
-  text-shadow: 1px 1px #f05522;
 }
 
 
@@ -180,11 +191,10 @@ a:link {
 .contact_section a {
   color: #232323;
   letter-spacing: 0.5px;
-  font-size: 16px;
-  display: block;
+  font-size: 17px;
 }
 
-.contact_section i:hover {
+.contact_icon a:hover i {
   color: #fff;
 }
 
@@ -326,7 +336,6 @@ img {
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 13px;
-  text-shadow: 1px 1px #fff;
   margin-top: 15px;
 }
 
@@ -456,6 +465,8 @@ footer {
   text-align: center;
   font-size: 18px;
   color: #111;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 
@@ -505,7 +516,8 @@ blockquote {
     margin: 0.5em;
     padding: 0.5em 2em 0.5em 3em;
     border-left: none;
-    font-size: 20px;
+    font-size: 21px;
+    -webkit-font-smoothing: antialiased;
 }
 blockquote:before {
     font-family: Georgia, serif;
@@ -519,16 +531,9 @@ blockquote:before {
 
 
 .section_1 {
-/*  margin-top: 0px;
-  padding-bottom: 50px;
-  padding: 50px; 50%;*/
-  /*background-color: #e6e1df;*/
-  /*background: linear-gradient(white, #cfc6c3);*/
   border-bottom: solid #f64c22;
-  background-image: url(../img/london.jpg);
- /* background-repeat: no-repeat;*/
-/*  background-position: center;*/
-background-size: cover;
+  background-image: url(../img/london2.jpg);
+  background-size: cover;
 }
 
 #owner {
@@ -539,6 +544,7 @@ background-size: cover;
   letter-spacing: 3px;
   text-shadow: 3px 3px 3px #696d58;
   font-family: 'Advent Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -566,7 +572,6 @@ blockquote {
   margin-bottom: 15px;
   margin-top: 15px;
   padding-top: 50px;
-  text-shadow: 1px 1px 1px #fff;
 }
 
 .section_4 h2 {
@@ -582,9 +587,10 @@ blockquote {
 .section_4 p {
   text-align: center;
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 1px;
   margin-bottom: 50px;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -607,6 +613,10 @@ blockquote {
   margin: 0 auto;
 }
 
+.round_image:hover {
+  filter: grayscale(100%);
+}
+
 .section_5 hr {
   width: 80%;
 }
@@ -616,41 +626,99 @@ blockquote {
   text-align: center;
   color: #fff;
   border: solid 3px #f94428;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
  margin-right: 20px;
  font-size: 30px;
  padding: 100px;
- text-shadow: 3px 3px 3px #111;
+ text-shadow: 4px 4px 3px #111;
+ border-radius: 15px;
 }
 
 .programs {
   background-image: url(../img/office3.jpg);
-  padding-bottom: 60px;
-  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-top: 40px;
   background-size: cover;
 }
 
 .button_more {
-  color: #232122;
-  border: 1px solid #232122;
+  color: #FF3D00;
+  border: 2px solid #FF3D00;
   border-radius: 25px;
-  font-size: 17px;
-  padding: 15px 20px;
+  font-size: 23px;
+  padding: 12px 35px;
+  margin-top: 10px;
   background-color: #fff;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  display: inline-block;
   text-align: center;
-}
-
-.button_more {
-      color: #232122;
-    border: 1px solid #232122;
-    background: linear-gradient(to left, #fff 50%, #019c98 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-
+  position: relative;
+  left: 42%;
+  transition: all ease 0.6s;
+  background: linear-gradient(to left, #fff 50%, #FF3D00 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
 }
 
 
+.button_more:hover {
+  color: #fff;
+  background-position: left bottom;
+}
+
+
+.logo {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+.logo:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+
+
+/*Overlay Effect*/
+
+
+@media screen and (min-width: 700px) {
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f94428;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .diploma_container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .text {
+     -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+    white-space: nowrap;
+    line-height: 35px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+}
 
 
 
