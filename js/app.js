@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   //Animate owner name
+
   $("#owner").css({"position":"relative","opacity":0, "right":"+=700"});
   $("#owner").animate({left:0, opacity:1},1500);
 
@@ -17,11 +18,27 @@ $(document).ready(function(){
 
   $("blockquote").css("display","none").fadeIn(2000);
 
-  // Increase the opacity of the logo when the user selects the index page
 
-   $(".index:selected").click(function(){
-     $(".logo").css("opacity","1");
-   })
+  // Scroll button
+
+  // When the user scrolls down 250px from the top of the document, show the button
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
 
 
 })
