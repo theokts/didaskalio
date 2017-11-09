@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>ΔΙΔΑΣΚΑΛΕΙΟ ΑΓΓΛΙΚΩΝ</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/hover_effe.css">
     <script src="https://use.fontawesome.com/0c5f037f31.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -17,7 +17,6 @@
   <script>
     $('#myButton').on('click', function () {
       var $btn = $(this).button('loading')
-      // business logic...
       $btn.button('reset')
     })
   </script>
@@ -26,7 +25,7 @@
       <div class="NavWrapper">
         <div class="navbar navbar-default NavCustom1">
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><img src="img/logo2.png" class="logo"></a>
+            <a class="navbar-brand selected" href="index.html"><img src="img/logo2.png" class="logo"></a>
             <a class="navbar-toggle NavbarToggleCustom" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -35,7 +34,7 @@
           </div>
           <div class="navbar-collapse collapse PushRight">
             <ul class="nav navbar-nav NavCustom2">
-              <li><a href="index.html" class="selected index">ΑΡΧΙΚΗ</a></li>
+              <li><a href="index.html" class="selected">ΑΡΧΙΚΗ</a></li>
               <li><a href="programs.html">ΠΡΟΓΡΑΜΜΑΤΑ</a></li>
               <li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
             </ul>
@@ -43,11 +42,10 @@
         </div>
        </div>
     </header>
-    <div>
     <div class="section_1">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-md-offset-2"><img id="maria-photo" class="round_image img-responsive" src="img/maria.jpg" alt="Maria's Photo"></div>
+          <div class="col-md-2 col-md-offset-2"><img id="maria-photo" class="img-responsive" src="img/maria.jpg" alt="Maria's Photo"></div>
           <div class="col-md-8 intro">
             <blockquote>
               <i><p>Καλωσήρθατε στο Διδασκαλείο Αγγλικών,<br><br>
@@ -77,7 +75,8 @@
         </div>
       </div>
     </div>
-     <div class="section_4">
+    <div><a href="#" id="myBtn" class="button_top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a></div>
+    <div class="section_4">
       <div class="container">
         <h1>Γιατί εμάς;</h1>
         <p>Γιατί να επιλέξω το Διδασκαλείο Αγγλικών;</p><hr>
@@ -85,17 +84,17 @@
           <div class="col-md-4">
             <h2>Μεγάλα ποσοστά επιτυχίας</h1>
             <p>Η υψηλή ποιότητα υπηρεσιών που παρέχουμε, σε συνδυασμό με την πολυετή μας εμπειρία στην προετοιμασία των μαθητών αποτελούν εγγύηση επιτυχίας! Συστηματικά, τα τελευταία χρόνια τα ποσοστά επιτυχίας των μαθητών μας φτάνουν στο 90%!</p>
-            <img src="img/slider/slider9.jpg" class="img-responsive round_image">
+            <img src="img/slider9.jpg" class="img-responsive round_image">
           </div>
           <div class="col-md-4">
             <h2>Φροντίδα για κάθε μαθητή</h1>
             <p>Στο Διδασκαλείο μας, ενδιαφερόμαστε για κάθε μαθητή ξεχωριστά. Τίποτε δεν περνά απαρατήρητο και είμαστε σε συνεχή επικοινωνία με όλους τους γονείς ώστε να τους κρατάμε ενήμερους για την επίδοση αλλά και τη συμπεριφορά και γενική εικόνα των παιδιών.</p>
-            <img src="img/slider/slider7.jpeg" class="img-responsive round_image">
+            <img src="img/slider7.jpeg" class="img-responsive round_image">
           </div>
           <div class="col-md-4">
             <h2>Άνετο, φιλικό και ζεστό περιβάλλον</h1>
             <p>Έχει αποδειχθεί ότι η εκμάθηση αλλά και η διδασκαλία γίνονται μια πιο ευχάριστη διαδικασία μέσα σ' ένα περιβάλλον φιλικό και προσεκτικά σχεδιασμένο. Στo Διδασκαλείο η αισθητική των χώρων εξασφαλίζει καλύτερη διάθεση και ενισχύοει την προσοχή.</p>
-            <img src="img/slider/slider4.jpeg" class="img-responsive round_image">
+            <img src="img/slider4.jpeg" class="img-responsive round_image">
           </div>
         </div>
       </div>
@@ -132,9 +131,20 @@
         </div>
       </div>
     </div>
-   <div class="newsletter">
-        <h1>Δεν θες να χάνεις νέο;</h1>
-       </div>
+    <div class="newsletter">
+      <h1>Δεν θες να χάνεις νέο;</h1>
+      <h2>Για να μένεις πάντα ενημερωμένος στις εξελίξεις του Διδασκαλείου<br>συμπλήρωσε το mail σου στην παρακάτω φόρμα.</h2>
+      <div class="container newsletter_container">
+        <div class="row">
+          <div class="col-md-7 col-md-offset-2">
+            <input class="enter-mail" type="email" name="">
+          </div>
+          <div class="col-md-2 submit_container">
+            <input class="submit_button" type="submit" value="ΕΓΓΡΑΦΗ">
+          </div>
+        </div>
+      </div>
+    </div>
        <div class="footer_outer">
         <div class="container">
           <div class="row">
