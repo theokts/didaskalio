@@ -51,7 +51,6 @@
 
   blockquote {
     padding-right: 0;
-
   }
 
   #owner {
@@ -87,6 +86,19 @@
   color: #fff;
 }
 
+ .submit_container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .ContactForm {
+    margin: 0 150px;
+  }
+
+  .contact_icon {
+    margin-bottom: 20px;
+ }
+
 
 }
 
@@ -95,7 +107,6 @@
   .PushRight {
     float: none;
   }
-
 
   .NavCustom2 a {
     text-align: center;
@@ -147,6 +158,8 @@
   }
 
 
+
+
 }
 
 
@@ -164,7 +177,6 @@
   margin-right: 0;
   padding-left: 25px;
   margin-left: 0px;
-  /*text-align: center;*/
  }
 
  .intro {
@@ -175,6 +187,33 @@
  #owner {
   margin-right: 15px;
  }
+
+  .ContactForm {
+    margin: 0 30px;
+  }
+
+ .info_icon {
+  margin-bottom: 25px;
+ }
+
+ .footer_outer {
+  padding-bottom: 30px;
+  padding-bottom: 30px;
+ }
+
+ .contact_icon {
+    margin-bottom: 20px;
+ }
+
+  .section_2 {
+    padding: 0 20px;
+  }
+
+  .newsletter_container {
+    margin: auto 5px;
+  }
+
+
 
 
 }
