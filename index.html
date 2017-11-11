@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/numscroller-1.0.js" type="text/javascript"></script>
   </head>
   <script>
     $('#myButton').on('click', function () {
@@ -45,7 +46,7 @@
     <div class="section_1">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-md-offset-2"><img id="maria-photo" class="img-responsive" src="img/maria.jpg" alt="Maria's Photo"></div>
+          <div class="col-md-3 col-md-offset-1"><img id="maria-photo" class="img-responsive overlay1" src="img/maria.png" alt="Maria's Photo"></div>
           <div class="col-md-8 intro">
             <blockquote>
               <i><p>Καλωσήρθατε στο Διδασκαλείο Αγγλικών,<br><br>
@@ -110,19 +111,19 @@
           <div class="col-md-4 col-md-offset-1">
             <div id="seven_years">
               <div class="white_line"></div>
-              <h1 class="section_5_orange">6 χρόνια</h1>
+              <h1 class="section_5_orange"><span class='numscroller' data-min='1' data-max='6' data-delay='2' data-increment='1'>6</span> χρόνια</h1>
               <p class="orange_comment">οι μαθητές μας σημειώνουν τις <span class="orange_span">καλύτερες </span>επιδόσεις</p>
               <img src="img/success2.png" class="stats_icon">
             </div>
             <div id="success_students">
               <div class="white_line2"></div>
-              <h2 class="section_5_orange">125 επιτυχόντες</h2>
+              <h2 class="section_5_orange"><span class='numscroller' data-min='1' data-max='125' data-delay='2' data-increment='1'>125</span><br>    επιτυχόντες</h2>
               <p class="orange_comment">στις εξετάσεις<span class="orange_span"> ECCE </span>και<span class="orange_span"> ECPE</span></p>
               <img src="img/success.png" class="stats_icon">
               <div class="white_line3"></div>
             </div>
             <div id="students_year">
-              <h3 class="section_5_orange">64 μαθητές</h3>
+              <h3 class="section_5_orange"><span class='numscroller' data-min='1' data-max='64' data-delay='2' data-increment='1'>64</span> μαθητές</h3>
               <p class="orange_comment">φοιτούν <span class="orange_span">φέτος</span> στο Διδασκαλείο</p>
               <img src="img/success3.png" class="stats_icon">
               <div class="orange_line"></div>
