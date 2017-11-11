@@ -19,9 +19,7 @@ $(document).ready(function(){
   $("blockquote").css("display","none").fadeIn(2000);
 
 
-  // Scroll button
-
-  // When the user scrolls down 250px from the top of the document, show the button
+  // When the user scrolls down, appears the top button
 
   window.onscroll = function() {scrollFunction()};
 
@@ -39,7 +37,6 @@ $(document).ready(function(){
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
   }
-
 
 })
 
