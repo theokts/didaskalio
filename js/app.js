@@ -29,15 +29,51 @@ $(document).ready(function(){
       } else {
           document.getElementById("myBtn").style.display = "none";
       }
-  }
+  };
 
   // When the user clicks on the button, scroll to the top of the document
 
   function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
-  }
+  };
 
-})
+  // When the user focus on the forms, the placeholder dissapears
+
+  $(".enter-mail,.name_form,.email_form,.textarea_form").focus(function() {
+    $(this).removeAttr("placeholder");
+  });
+
+  // When the user deletes the inputs in the forms, the placeholder appears
+
+  $(".enter-mail").focusout(function() {
+    if ($(this).val() == ""){
+      $(this).attr("placeholder", "Βάλε το email σου εδώ");
+    }
+  });
+
+  $(".name_form").focusout(function() {
+    if ($(this).val() == ""){
+      $(this).attr("placeholder", "Όνομα");
+    }
+  });
+
+  $(".email_form").focusout(function() {
+    if ($(this).val() == ""){
+      $(this).attr("placeholder", "Email");
+    }
+  });
+
+  $(".textarea_form").focusout(function() {
+    if ($(this).val() == ""){
+      $(this).attr("placeholder", "Μήνυμα");
+      // $(".textarea_form").css({"padding-left": "2px", "padding-top": "2px"});
+    }
+  });
+
+
+
+
+});
 
 
