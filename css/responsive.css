@@ -99,6 +99,10 @@
     margin-bottom: 20px;
  }
 
+ .hover_overlay {
+    visibility: hidden;
+  }
+
 
 }
 
@@ -118,6 +122,7 @@
     margin-top: 30px;
     padding: 13px;
   }
+
 
   footer {
     padding: 35px;
@@ -165,9 +170,6 @@
 
 @media screen and (max-width: 600px) {
 
-   .button_more {
-    left: 30%;
-  }
 
  blockquote:before {
   font-size: 1.5em;
@@ -191,8 +193,6 @@
  .section_3 h1 {
   font-size: 30px;
  }
-
-
 
 
   .ContactForm {

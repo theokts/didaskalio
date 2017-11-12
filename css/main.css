@@ -1,4 +1,4 @@
-f
+
 /**************************
 GENERAL
 ***************************/
@@ -61,6 +61,31 @@ body {
   box-shadow: inset 0 3px 0 0 #fff;
   opacity: 1;
 }
+
+::-webkit-input-placeholder {
+  font-size: 19px;
+  padding-left: 6px;
+  padding-top: 6px;
+}
+
+:-ms-input-placeholder {
+  font-size: 18px;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+:-moz-placeholder {
+  font-size: 18px;
+  padding-left: 8px;
+  padding-top: 8px;
+ }
+
+
+ .enter-mail:focus {
+    outline: none;
+ }
+
+
 
 
 .PushRight {
@@ -577,10 +602,53 @@ blockquote {
 #maria-photo {
   margin-top: 40px;
   left: 500%;
-  position: absolute;
+  position: relative;
   border-radius: 50%;
 }
 
+.hover_container {
+  padding: 0;
+}
+
+.hover_overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: #232323;
+  border-radius: 50%;
+  margin-top: 40px;
+  }
+
+.hover_container:hover .hover_overlay {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transition: 0.5s;
+}
+
+.text h1 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.text h2 {
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+
+#ID_line {
+  width: 50%;
+  border-top: solid #f94428 2px;
+}
 
 
 .section_4 {
@@ -636,11 +704,11 @@ blockquote {
   height: 75%;
   display: block;
   margin: 0 auto;
+  filter: grayscale(60%);
 }
 
 .round_image:hover {
-  filter: grayscale(100%);
-  border-radius: 20%;
+  filter: grayscale(0%);
 }
 
 .section_5 hr {
@@ -652,13 +720,20 @@ blockquote {
   text-align: center;
   color: #fff;
   border: solid 3px #f94428;
-  margin-bottom: 25px;
- margin-right: 20px;
+ margin-bottom: 40px;
  font-size: 30px;
- padding: 100px;
+ padding: 80px 50px;
  text-shadow: 4px 4px 3px #111;
  border-radius: 15px;
+ position: relative;
+ margin-right: 20px;
+ margin-left: 20px;
 }
+
+.diploma a {
+  color: #fff;
+}
+
 
 .programs {
   background-image: url(../img/office3.jpg);
@@ -674,7 +749,7 @@ blockquote {
   font-size: 16px;
   font-weight: bold;
   padding: 12px 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: #fff;
   letter-spacing: 1px;
   display: inline-block;
@@ -737,10 +812,7 @@ blockquote {
     border-radius: 25px;
     width: 100%;
     padding: 15px;
-  }
-
-  .enter-mail:focus {
-    outline: none;
+    font-size: 17px;
   }
 
 
@@ -791,10 +863,6 @@ blockquote {
 
 
 
-
-
-
-
   .send_button {
     color: #111;
     font-size: 20px;
@@ -838,7 +906,7 @@ blockquote {
     transition: .5s ease;
   }
 
-  .diploma_container:hover .overlay {
+  .diploma:hover .overlay {
     bottom: 0;
     height: 100%;
   }
