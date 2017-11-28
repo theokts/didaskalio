@@ -24,7 +24,7 @@ $(document).ready(function(){
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+      if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
           document.getElementById("myBtn").style.display = "block";
       } else {
           document.getElementById("myBtn").style.display = "none";
@@ -67,11 +67,27 @@ $(document).ready(function(){
   $(".textarea_form").focusout(function() {
     if ($(this).val() == ""){
       $(this).attr("placeholder", "Μήνυμα");
-      // $(".textarea_form").css({"padding-left": "2px", "padding-top": "2px"});
+      $(".textarea_form").css({"padding-left": "2px", "padding-top": "2px"});
     }
   });
 
+    // Carousel - Index page
 
+    var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2500
+});
+
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
 
 
 });
