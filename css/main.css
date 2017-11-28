@@ -63,30 +63,23 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  font-size: 19px;
-  padding-left: 6px;
-  padding-top: 6px;
+  font-size: 18px;
 }
 
 :-ms-input-placeholder {
   font-size: 18px;
-  padding-left: 8px;
-  padding-top: 8px;
 }
 
 :-moz-placeholder {
   font-size: 18px;
-  padding-left: 8px;
-  padding-top: 8px;
  }
 
 
  .enter-mail:focus {
     outline: none;
+    padding-left: 30px;
+    font-size: 18px;
  }
-
-
-
 
 .PushRight {
   float: right;
@@ -257,6 +250,38 @@ img {
   width: 100%;
 }
 
+.map {
+  display: block;
+}
+
+.map_section {
+  border-top: solid 2px #fff ;
+  background-color: #232323;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+.map_section h1 {
+  color: #f05522;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.map_section p {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.map_comment {
+
+}
+
+
 
 #map iframe {
   display: block;
@@ -288,9 +313,13 @@ img {
   padding: 60px 0;
   margin-bottom: 0;
   margin-top: 0;
-  border-top: 4px solid #aa4b03;
-  background: linear-gradient(180deg ,#232323, #f05522);
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background-color: #f05522;
+  /*background: linear-gradient(180deg ,#232323, #f05522);*/
 }
+
+
 
 .newsletter h1 {
   color:#fff;
@@ -604,6 +633,7 @@ blockquote {
   left: 500%;
   position: relative;
   border-radius: 50%;
+  width: 85%;
 }
 
 .hover_container {
@@ -620,6 +650,7 @@ blockquote {
   background-color: #232323;
   border-radius: 50%;
   margin-top: 40px;
+  width: 85%;
   }
 
 .hover_container:hover .hover_overlay {
@@ -630,14 +661,14 @@ blockquote {
 }
 
 .text h1 {
-  font-size: 24px;
+  font-size: 23px;
   color: #fff;
   text-align: center;
   margin-bottom: 25px;
 }
 
 .text h2 {
-  font-size: 17px;
+  font-size: 16px;
   color: #fff;
   text-align: center;
   font-style: italic;
@@ -709,6 +740,9 @@ blockquote {
 
 .round_image:hover {
   filter: grayscale(0%);
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .section_5 hr {
@@ -812,7 +846,8 @@ blockquote {
     border-radius: 25px;
     width: 100%;
     padding: 15px;
-    font-size: 17px;
+    font-size: 18px;
+    padding-left: 30px;
   }
 
 
@@ -852,6 +887,8 @@ blockquote {
     width: 100%;
     padding: 8px;
     border: solid #bfa3a7 1px;
+    padding-left: 10px;
+    font-size: 18px;
   }
 
   .textarea_form {
@@ -859,6 +896,25 @@ blockquote {
     height: 300px;
     margin-bottom: 30px;
     border: solid #bfa3a7 1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .textarea_form:focus {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .name_form:focus {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .email_form:focus {
+    padding-left: 10px;
+    font-size: 18px;
   }
 
 
@@ -929,6 +985,10 @@ blockquote {
 }
 
 
-
+.owl-carousel{
+  background-color: #232323;
+  padding-top: 30px;
+  border-top: solid 1px white;
+}
 
 
