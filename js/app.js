@@ -67,7 +67,6 @@ $(document).ready(function(){
   $(".textarea_form").focusout(function() {
     if ($(this).val() == ""){
       $(this).attr("placeholder", "Μήνυμα");
-      $(".textarea_form").css({"padding-left": "2px", "padding-top": "2px"});
     }
   });
 
