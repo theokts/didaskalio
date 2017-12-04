@@ -940,8 +940,41 @@ blockquote {
   }
 
 
+.twitter {
+  border-top: solid 2px #fff;
+  padding: 40px 0 40px 0;
+  margin-bottom: 0;
+  background-color: #232323;
+}
 
+.twitter_timeline {
+  text-align: center;
+}
 
+.follow_us {
+  color: #D60000;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.follow_us a {
+  color:  #D60000;
+}
+
+.follow_us a:hover {
+  color: #009DF6;
+}
+
+.follow_twitter {
+  text-align: center;
+}
+
+.follow_twitter hr {
+  margin-top: 40px;
+  color: #D60000;
+  border-top: solid 2px #f94428;
+  width: 60%;
+}
 
 
 /*Overlay Effect*/
