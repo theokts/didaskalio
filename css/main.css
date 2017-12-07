@@ -967,6 +967,8 @@ blockquote {
 
 .follow_twitter {
   text-align: center;
+  position: relative;
+  top: 150px;
 }
 
 .follow_twitter hr {
