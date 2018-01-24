@@ -310,7 +310,7 @@ img {
 }
 
 .newsletter {
-  padding: 60px 0;
+  padding: 80px 0;
   margin-bottom: 0;
   margin-top: 0;
   border-top: 2px solid #fff;
@@ -972,11 +972,13 @@ blockquote {
 }
 
 .follow_twitter hr {
-  margin-top: 40px;
+  margin-top: 70px;
   color: #D60000;
   border-top: solid 2px #f94428;
   width: 60%;
 }
+
+
 
 
 /*Overlay Effect*/
