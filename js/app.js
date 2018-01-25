@@ -7,8 +7,9 @@ $(document).ready(function(){
 
   //Animate owner name
 
-  $("#maria-photo").css({"position":"relative","opacity":0, "right":"+=700"});
-  $("#maria-photo").animate({left:0, opacity:1},1500);
+  $("#maria-photo").css({"position":"relative","opacity":0, "right":"+=700"}); //method
+  $("#maria-photo").animate({left:0, opacity:1},1500); //method
+
 
   // Fade in effect in photo in contact page
 
@@ -31,12 +32,23 @@ $(document).ready(function(){
       }
   };
 
+  var backToTop = function(e){
+    e.preventDefault();
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  }
+
+  // Animation top button
+
+
+  $('#myBtn.button_top').click(backToTop); //event(event handler)
+
   // When the user clicks on the button, scroll to the top of the document
 
-  function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-  };
+  // function topFunction() {
+  //     document.body.scrollTop = 0;
+  //     document.documentElement.scrollTop = 0;
+  // };
 
   // When the user focus on the forms, the placeholder dissapears
 
@@ -90,5 +102,6 @@ $('.stop').on('click',function(){
 
 
 });
+
 
 
